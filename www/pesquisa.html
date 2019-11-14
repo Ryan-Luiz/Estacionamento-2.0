@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+         carregaLista();
+    });
+
+  </script>
+
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    h5{
+      text-align:center;
+    }
+    #voltar{
+      margin-left:100px;
+      background-color:#00b0ff;
+    }
+    #pagar{
+      background-color:#00b0ff;
+    }
+  
+
+  </style>
+  </head>
+
+  <body>
+    <h5>VEICULOS:</h5>
+  <div class="container">
+
+  <label>VERIFIQUE SEUS DADOS</label>
+  <select class="browser-default" id="lista">
+    <option value="" disabled selected >Escolha Sua Placa</option>
+  </select>
+
+ 
+   
+        <div class="input-field col s6">
+          <input id="proprietario" type="text" class="validate" placeholder="PROPRIETARIO"  required>
+         
+        </div>
+        <div class="input-field col s6">
+          <input id="marca" type="text" class="validate" placeholder="MARCA" required>
+          
+        </div>
+        <div class="input-field col s6">
+          <input id="modelo" type="text" class="validate" placeholder="MODELO" required>
+          
+        </div>
+        <div class="input-field col s6">
+          <input id="placa" type="text" class="validate" placeholder="PLACA" required>
+        </div>
+
+        <div>
+           <label for="">Horario de Saida</label>
+           <div class="input-field col s6">
+          <input id="hora" type="time" class="validate" required>
+        </div>
+    
+    
+  
+  
+       
+ <a href="final.html"class="waves-effect waves-light btn" id="pagar">PAGAR</a>
+<a href="index.html" class="waves-effect waves-light btn" id="voltar">VOLTAR</a>
+  </div>
+  
+
+
+    
+    
+   
+  </div>
+  </body>
+  </html>
+
+  
